@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.container-grid {
+    width: 80vw;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.banner {
+    height: 100vh;
+
+    background-image: linear-gradient(180deg, rgb(0, 0, 0) 10%, rgba(50, 40, 155, 0.451) 65%, rgba(255, 255, 255, 0.314) 100%), url(img/banner.png);
+    background-repeat: no-repeat;
+    background-position: 40% 40%;
+
+}
+
+.menu {
+
+    width: 700px;
+
+    display: flex;
+    justify-content: space-between;
+}
