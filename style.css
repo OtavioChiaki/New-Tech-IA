@@ -85,3 +85,31 @@ html {
 
     z-index: 1;
 }
+
+.onda {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+    margin-top: 10%;
+
+}
+
+.barras {
+    display: flex;
+    justify-content: space-between
+}
+
+#barra {
+    height: 500px;
+    background-color: rgb(20, 16, 61);
+    width: 200px;
+    margin-top: 103px
+}
+
+#barras2 {
+    height: 500px;
+    background-color: rgb(20, 16, 61);
+    width: 200px;
+    margin-top: 103px
+}
