@@ -1,6 +1,13 @@
 @font-face {
     font-family: 'bruno-ace';
     src: url(fontes/Bruno_Ace/BrunoAce-Regular.ttf);
+
+}
+
+@font-face {
+
+    font-family: 'ques';
+    src: url(fontes/Questrial-Regular.ttf);
 }
 
 * {
@@ -34,6 +41,7 @@ html {
     display: flex;
     justify-content: space-between;
     margin-top: 40px;
+    font-family: 'bruno-ace';
 }
 
 .menu a {
@@ -56,10 +64,11 @@ html {
 
 .container-grid #logo {
     width: 30%;
-    margin-top: 10px;
+    margin-top: 8px;
 }
 
-#sobre-empresa {
+.sobre-empresa {
+
     height: 250px;
 
     margin-bottom: 120px;
@@ -70,46 +79,323 @@ html {
     position: relative;
 }
 
-.container-grid {
+.container-sobre {
+    height: auto;
+
+    padding-top: 20px;
+    /* Adiciona preenchimento superior */
+    padding-bottom: -200px;
+    /* Adiciona preenchimento inferior */
+
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    /* Alinha horizontalmente no centro */
 }
 
-#sobre-empresa a {
+.sobre-empresa a {
     width: fit-content;
-    margin-top: 8%;
+    margin-top: 70px;
     font-family: 'bruno-ace';
     font-size: 50px;
-
     color: white;
-
     z-index: 1;
+    margin-bottom: 34px;
 }
 
-.onda {
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    z-index: -1;
-    margin-top: 10%;
-
+.ondas {
+    transform: rotate(180deg);
+    align-self: flex-end;
+    margin-top: 20px;
+    z-index: -2;
 }
 
-.barras {
+
+.conteudo-sobre {
     display: flex;
-    justify-content: space-between
+
 }
 
-#barra {
-    height: 500px;
-    background-color: rgb(20, 16, 61);
-    width: 200px;
-    margin-top: 103px
+.dois-parte-sobre {
+    width: 100%;
+    width: 100%;
 }
 
-#barras2 {
+.fantasma {
     height: 500px;
-    background-color: rgb(20, 16, 61);
-    width: 200px;
-    margin-top: 103px
+    width: 500px;
+}
+
+#img-empresa {
+    margin-left: 100px;
+    margin-top: 190px;
+    float: left;
+    /* Move a imagem para a esquerda */
+    margin-right: 20px;
+    /* Adicione margem à direita para separar a imagem do texto */
+}
+
+.conteudo-sobre p {
+    font-family: 'ques';
+    font-size: 20px;
+    column-count: auto;
+    /* Define o número de colunas */
+    column-fill: auto;
+    /* Permite que o texto seja distribuído verticalmente */
+    margin-left: 10px;
+    /* Adicione margem à esquerda para separar o texto da imagem */
+    margin-right: 100px;
+    margin-top: 200px;
+}
+
+.um-parte-sobre {
+    height: 500px;
+    width: 1000px;
+}
+
+.um-parte-sobre p {
+    margin-top: 10px;
+    margin-left: 100px;
+    font-family: 'ques';
+    font-size: 20px;
+    column-count: auto;
+}
+
+
+.dois-parte-sobre img {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 70px;
+    margin-right: 100px;
+}
+
+.dois-parte-sobre #empresa-por-dentro {
+    margin-top: 10px;
+    margin-left: -500px;
+}
+
+.dois-parte-sobre #tres-texto {
+    margin-left: -515px;
+    margin-top: -100px;
+    column-count: auto;
+    margin-bottom: 500px;
+}
+
+.fim-sobre {
+    height: 500px;
+    width: 500px;
+}
+
+.fim-sobre img {
+    margin-left: -750px;
+    margin-top: 150px;
+    margin-bottom: 500px;
+}
+
+.container-sobre {
+    height: 90%;
+}
+
+#cases-empresa {
+    margin-top: 300px;
+    /* Adiciona espaço acima da seção */
+}
+
+.parallax {
+    height: 100vh;
+    overflow-x: hidden;
+    position: relative;
+    background-color: #14103D;
+}
+
+.parallax-background {
+    background-image: url('img/super-uzumaki.svg');
+    /* Substitua pela sua imagem de fundo */
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    animation: rotateBackground 20s linear infinite;
+    ;
+
+}
+
+.parallax-background:nth-child(2) {
+    background-image: url('img/super-uzumaki.svg');
+    /* Substitua pela sua segunda imagem de fundo */
+    /* Outras propriedades de estilo */
+}
+
+
+
+@keyframes rotateBackground {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #7FF007;
+    font-family: 'bruno-ace';
+
+}
+
+.item {
+    text-align: center;
+    color: #7FF007;
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+    /* Garante que o conteúdo fique sobre o fundo */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Adiciona um fundo semitransparente para destacar o conteúdo */
+    margin: 20px auto;
+    /* Adiciona margem para separar os itens */
+    max-width: 80%;
+    /* Limita a largura do item */
+}
+
+.item h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.item img {
+    width: 100%;
+    max-width: 400px;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+.item p {
+    font-size: 18px;
+}
+
+/* 
+.other-content { Estilos para outro conteúdo abaixo da paralaxe */
+
+
+.sobre-games a {
+    width: fit-content;
+    margin-top: 70px;
+    font-family: 'bruno-ace';
+    font-size: 50px;
+    color: white;
+    z-index: 1;
+    margin-bottom: 34px;
+
+}
+
+
+.sobre-games #games {
+    margin-top: 46%;
+    margin-bottom: 20%;
+}
+
+
+
+.container-cards {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* Para permitir que os cards quebrem para a próxima linha */
+}
+
+.card {
+    height: 400px;
+    width: calc(25% - 20px);
+    /* Calcula a largura com margem para quatro cards por linha */
+    margin-bottom: 20px;
+    /* Adiciona margem inferior entre os cards */
+    box-sizing: border-box;
+    /* Garante que a largura do card inclua a margem */
+    background-color: #14103D;
+}
+
+.card img {
+    height: 55%;
+    width: 100%;
+    border-right: 4px 4px 0px 0px;
+}
+
+.card p {
+    text-align: left;
+    font-family: 'ques';
+
+    padding: 7%;
+
+    color: #1aee36;
+}
+
+.card button {
+    width: 100%;
+    height: 50px;
+
+    background-color: var(#14103D);
+
+    border: none;
+    border-radius: 20px;
+
+    color: #14103D;
+
+    font-family: 'bruno-ace';
+    font-size: 17px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: bakcgrond-color 500ms;
+}
+
+.card button:hover {
+    background-color: #1aee36;
+}
+
+
+.fim-do-site {
+    margin-top: -140px;
+    /* Adicione a margem superior desejada */
+    padding-top: 20px;
+    /* Adicione um preenchimento superior para separar o conteúdo */
+    position: relative;
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+.beckgrond img {
+    width: 100%;
+    height: auto;
+    display: block;
+    background-image: linear-gradient(180deg, rgba(10,5,63,0.8240546218487395) 100%, rgba(3, 0, 68, 0.356) 100%) ,url(img/banner-do-fim-do-site.png);
+}
+
+.redes-sociais {
+    margin-top: -800px;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 6%;
+
+}
+
+.redes span {
+    font-family: "bruno-ace";
+    font-size: 25px;
+    color: #1aee36;
+}
+
+.redes svg {
+    cursor: pointer;
+
 }
