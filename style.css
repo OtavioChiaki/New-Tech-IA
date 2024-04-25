@@ -216,7 +216,6 @@ html {
     background-size: cover;
     height: 100%;
     animation: rotateBackground 20s linear infinite;
-    ;
 
 }
 
@@ -224,6 +223,7 @@ html {
     background-image: url('img/super-uzumaki.svg');
     /* Substitua pela sua segunda imagem de fundo */
     /* Outras propriedades de estilo */
+    
 }
 
 
@@ -374,28 +374,72 @@ html {
 
 
 
-.beckgrond img {
-    width: 100%;
-    height: auto;
-    display: block;
-    background-image: linear-gradient(180deg, rgba(10,5,63,0.8240546218487395) 100%, rgba(3, 0, 68, 0.356) 100%) ,url(img/banner-do-fim-do-site.png);
+footer {
+    height: 485px;
+    background-color: #14103D;
+}
+
+footer .container-grid {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .redes-sociais {
-    margin-top: -800px;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.redes-sociais p {
+    color: white;
+    font-family: "bruno-ace";
+    font-size: 24px;
+}
+
+.icones-redes {
+    width: 500px;
+
     display: flex;
     justify-content: space-around;
-    margin-left: 6%;
-
 }
 
-.redes span {
-    font-family: "bruno-ace";
-    font-size: 25px;
-    color: #1aee36;
+.icones-redes a {
+    color: white;
 }
 
-.redes svg {
-    cursor: pointer;
+.icones-redes a:hover {
+    color:#7FF007;
+}
+
+
+
+@media screen and (max-width: 1300px) {
+    .sobre-empresa {
+       
+    } 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 }
