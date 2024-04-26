@@ -111,85 +111,32 @@ html {
 }
 
 
-.conteudo-sobre {
-    display: flex;
-
-}
-
-.dois-parte-sobre {
-    width: 100%;
-    width: 100%;
-}
-
-.fantasma {
-    height: 500px;
-    width: 500px;
-}
-
-#img-empresa {
-    margin-left: 100px;
-    margin-top: 190px;
-    float: left;
-    /* Move a imagem para a esquerda */
-    margin-right: 20px;
-    /* Adicione margem à direita para separar a imagem do texto */
-}
-
-.conteudo-sobre p {
-    font-family: 'ques';
-    font-size: 20px;
-    column-count: auto;
-    /* Define o número de colunas */
-    column-fill: auto;
-    /* Permite que o texto seja distribuído verticalmente */
-    margin-left: 10px;
-    /* Adicione margem à esquerda para separar o texto da imagem */
-    margin-right: 100px;
-    margin-top: 200px;
-}
-
 .um-parte-sobre {
-    height: 500px;
-    width: 1000px;
+    margin-top: 300px;
+    margin-left: 30%;
 }
 
 .um-parte-sobre p {
-    margin-top: 10px;
-    margin-left: 100px;
-    font-family: 'ques';
+    padding-top: 2%;
+    padding-bottom: 2%;
+    width: 50%;
+    font-family: "ques";
     font-size: 20px;
-    column-count: auto;
 }
 
-
-.dois-parte-sobre img {
-    margin-top: 100px;
-    margin-bottom: 100px;
-    margin-left: 70px;
-    margin-right: 100px;
+.fantasma {
+    margin-left: 30%;
 }
 
-.dois-parte-sobre #empresa-por-dentro {
-    margin-top: 10px;
-    margin-left: -500px;
+.fantasma p {
+    padding-top: 2%;
+    width: 50%;
+    font-family: "ques";
+    font-size: 20px;
 }
 
-.dois-parte-sobre #tres-texto {
-    margin-left: -515px;
-    margin-top: -100px;
-    column-count: auto;
-    margin-bottom: 500px;
-}
-
-.fim-sobre {
-    height: 500px;
-    width: 500px;
-}
-
-.fim-sobre img {
-    margin-left: -750px;
-    margin-top: 150px;
-    margin-bottom: 500px;
+.container-sobre #newnew {
+    padding-right: 51%;
 }
 
 .container-sobre {
@@ -415,31 +362,83 @@ footer .container-grid {
     color:#7FF007;
 }
 
+@media screen and (max-width: 2500px) {
 
+.container-grid #hamburgue { display: none };
+}
 
 @media screen and (max-width: 1300px) {
-    .sobre-empresa {
-       
-    } 
+    .menu a {
+        font-size: 17px;
+    }
 
 
+    .redes-sociais p {
+        font-size: 17px;
+        padding-right: 15%;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .menu a {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 1055px) {
+    .icones-redes {
+        width: 400px;
+    }
+    
+.card button {
 
 
+/* preciso mexer no texto dos botoes */
 
 
+}
 
 
+}
 
+@media screen and (max-width: 1000px) {
 
+.um-parte-sobre #img-empresa {
+    width: 500px;
+}
 
+.dois-parte-sobre #empresa-por-dentro {
+    width: 500px;
+}
 
+.menu {
+    border-radius: 15%;
+        height: 350px;
+        width: 450px;
+        padding: 0px 50px;
+        flex-direction: column;
+        justify-content: space-around;
+        background-color: #458104;
+        position: absolute;
+        top: 105px;
+        right: 200px
+}
 
+.container-grid #logo {
+    width: 60%;
+}
 
+.container-grid #hamburgue {
+    margin-left: 20%;
+    padding-top: 5%;
+    width: 80px;
 
+    display: unset;
 
+    background: none;
 
+    border: none;
+    fill: #458104;
 
-
-
-
+}
 }
