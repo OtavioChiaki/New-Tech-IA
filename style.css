@@ -20,6 +20,13 @@ html {
     scroll-behavior: smooth;
 }
 
+.container-grid {
+    width: 70vw;
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+}
+
 .container-contatos {
     width: 70vw;
     max-width: 1400px;
@@ -428,6 +435,9 @@ footer .container-contatos {
     .container-sobre {
         height: 60%;
     }
+    .parallax {
+        height: 67vh;
+    }
 }
 
 
@@ -439,6 +449,8 @@ footer .container-contatos {
     .container-sobre {
         height: 50%;
     }
+
+
 }
 
 @media screen and (max-width: 1055px) {
@@ -545,6 +557,25 @@ footer .container-contatos {
 
 }
 
+@media screen and (max-width: 988px) {
+    .container-contatos img {
+        margin-top: -36%;
+        margin-left: 30%;
+}
+
+.container-contatos {
+    width: 15vw;
+
+    margin-left: 3%;
+}
+}
+
+
+
+
+
+
+
 @media screen and (max-width: 920px) {
     .parallax {
         height: 55vh;
@@ -554,6 +585,11 @@ footer .container-contatos {
 @media screen and (max-width: 856px) {
     .parallax {
         height: 53vh;
+    }
+    
+    .container-contatos {
+    
+        margin-left: 1%;
     }
     
 }
@@ -567,6 +603,34 @@ footer .container-contatos {
     .parallax {
         height: 50vh;
     }
+
+    .container-contatos {
+    
+        margin-left: -5%;
+    }
+    
+}
+
+
+@media screen and (max-width: 802px) {
+
+.container-contatos img {
+height: 70px;
+}
+
+.redes-sociais {
+    height: 56px;
+}
+
+.redes-sociais p {
+    padding-right: 5%;
+}
+
+
+.card {
+width: calc(30% - 1px);
+}
+
 }
 
 
@@ -602,6 +666,31 @@ footer .container-contatos {
 }
 
 
+@media screen and (max-width: 720px) {
+
+
+.icones-redes {
+    width: 379px;
+}
+
+@media screen and (max-width: 700px) {
+}
+
+.container-contatos img {
+    height: 62px;
+}
+}
+
+@media screen and (max-width: 662px) {
+
+.icones-redes {
+    width: 286px;
+}
+}
+
+
+
+
 @media screen and (max-width: 655px) {
 
     .parallax {
@@ -628,7 +717,27 @@ footer .container-contatos {
     }
 }
 
+@media screen and (max-width: 580px) {
+.item {
+    max-width: 100%
+}
+.card p {
+    font-size: 14px;
+    padding: 4%;
+}
+.icones-redes {
+    width: 276px;
+}
 
+.container-contatos img {
+    height: 56px;
+}
+
+.parallax {
+    height: 35vh;
+}
+
+}
 
 @media screen and (max-width: 550px) {
     .um-parte-sobre p {
@@ -638,6 +747,24 @@ footer .container-contatos {
     .fantasma p {
         width: 100%;
     }
+
+  .icones-redes svg {  height: 30px;
+
+}
+
+.icones-redes {
+    width: 207px;
+}
+
+.redes-sociais p {
+    margin-top: -25%;
+}
+}
+
+@media screen and (max-width: 530px) {
+   .parallax { 
+    height: 33vh
+}
 }
 
 @media screen and (max-width: 500px) {
@@ -653,4 +780,132 @@ footer .container-contatos {
 .container-sobre #newnew {
     margin-top: 30%;
 }
+
+.sobre-empresa a {
+    font-size: 20px;
+}
+}
+
+
+
+@media screen and (max-width: 470px) {
+
+.container-contatos img {
+    height: 50px;
+}
+.container-sobre #newnew {
+    margin-top: 37%;
+}
+
+.menu {
+    right: 56px;
+}
+
+.container-contatos img {
+    height: 44px;
+}
+
+.icones-redes svg {  height: 25px;
+
+}
+}
+
+@media screen and (max-width: 444px) {
+footer .container-contatos {
+align-items: center;
+flex-direction: column;
+height: 68%;
+}
+
+.container-contatos {
+    margin-left: 41%;
+}
+
+.container-contatos img {
+    height: 70px;
+    margin-top: 68px;
+    margin-left: 37px;
+}
+
+.parallax {
+    height: 29vh;
+}
+}
+
+@media screen and (max-width: 400px) {
+
+    .container-sobre #newnew {
+        margin-top: 48%;
+    }
+
+    .um-parte-sobre #img-empresa {
+        width: 320px;
+    }
+
+
+    .dois-parte-sobre #empresa-por-dentro {
+        width: 322px;
+    }
+
+    .menu {
+        right: 26px;
+    }
+    .sobre-empresa a {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .um-parte-sobre #img-empresa {
+        width: 281px;
+    }
+
+    .container-sobre #newnew {
+        margin-top: 57%;
+    }
+
+    .dois-parte-sobre #empresa-por-dentro {
+        width: 285px;
+    }
+}
+
+@media screen and (max-width: 355px) {
+    .um-parte-sobre #img-empresa {
+        width: 272px;
+    }
+
+    .container-sobre #newnew {
+        margin-top: 60%;
+    }
+
+    .dois-parte-sobre #empresa-por-dentro {
+        width: 280px;
+    }
+    .menu {
+        right: 3px;
+    }
+}
+
+@media screen and (max-width: 310px) {
+
+    .um-parte-sobre #img-empresa {
+        width: 255px;
+    }
+
+    .container-sobre #newnew {
+        margin-top: 75%;
+    }
+
+    .dois-parte-sobre #empresa-por-dentro {
+        width: 255px;
+    }
+    .menu {
+        width: 297px;
+}
+
+.card p {
+    font-size: 11px;
+    padding: 0%;
+}
+
 }
