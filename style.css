@@ -20,7 +20,7 @@ html {
     scroll-behavior: smooth;
 }
 
-.container-grid {
+.container-contatos {
     width: 70vw;
     max-width: 1400px;
     margin: 0 auto;
@@ -170,7 +170,7 @@ html {
     background-image: url('img/super-uzumaki.svg');
     /* Substitua pela sua segunda imagem de fundo */
     /* Outras propriedades de estilo */
-    
+
 }
 
 
@@ -326,7 +326,7 @@ footer {
     background-color: #14103D;
 }
 
-footer .container-grid {
+footer .container-contatos {
     height: 100%;
     display: flex;
     justify-content: space-between;
@@ -359,12 +359,52 @@ footer .container-grid {
 }
 
 .icones-redes a:hover {
-    color:#7FF007;
+    color: #7FF007;
 }
+
+
+.container-sobre-cases {
+    height: auto;
+    padding-top: 20px;
+    padding-bottom: -200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-sobre-cases img {
+    display: none;
+}
+
+.container-sobre-games {
+    height: auto;
+    padding-top: 20px;
+    padding-bottom: -200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-sobre-contatos {
+    height: auto;
+    padding-top: 20px;
+    padding-bottom: -200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+
 
 @media screen and (max-width: 2500px) {
 
-.container-grid #hamburgue { display: none };
+    .container-grid #hamburgue {
+        display: none
+    }
+
+    ;
 }
 
 @media screen and (max-width: 1300px) {
@@ -377,11 +417,27 @@ footer .container-grid {
         font-size: 17px;
         padding-right: 15%;
     }
+
+    .container-sobre {
+        height: 80%;
+    }
 }
+
+@media screen and (max-width: 1200px) {
+
+    .container-sobre {
+        height: 60%;
+    }
+}
+
 
 @media screen and (max-width: 1100px) {
     .menu a {
         font-size: 15px;
+    }
+
+    .container-sobre {
+        height: 50%;
     }
 }
 
@@ -389,30 +445,39 @@ footer .container-grid {
     .icones-redes {
         width: 400px;
     }
-    
-.card button {
+
+    .container-sobre {
+        height: 40%;
 
 
-/* preciso mexer no texto dos botoes */
+    }
 
-
-}
-
+    .parallax {
+        height: 66vh;
+    }
 
 }
 
 @media screen and (max-width: 1000px) {
 
-.um-parte-sobre #img-empresa {
-    width: 500px;
-}
+    .um-parte-sobre #img-empresa {
+        width: 500px;
+    }
 
-.dois-parte-sobre #empresa-por-dentro {
-    width: 500px;
-}
+    .um-parte-sobre p {
+        font-size: 15px;
+    }
 
-.menu {
-    border-radius: 15%;
+    .dois-parte-sobre #empresa-por-dentro {
+        width: 500px;
+    }
+
+    .fantasma p {
+        font-size: 15px;
+    }
+
+    .menu {
+        border-radius: 15%;
         height: 350px;
         width: 450px;
         padding: 0px 50px;
@@ -422,23 +487,170 @@ footer .container-grid {
         position: absolute;
         top: 105px;
         right: 200px
+    }
+
+    .container-grid #logo {
+        width: 60%;
+    }
+
+    .container-grid #hamburgue {
+        margin-left: 20%;
+        padding-top: 5%;
+        width: 80px;
+
+        display: unset;
+
+        background: none;
+
+        border: none;
+        fill: #458104;
+
+    }
+
+    .sobre-games a {
+        font-size: 25px;
+    }
+
+    .sobre-empresa a {
+        font-size: 25px;
+    }
+
+    .card {
+        height: 450px;
+    }
+
+    .card p {
+        font-size: 15px;
+    }
+
+    .redes-sociais {
+        height: 35%;
+    }
+
+    .container-grid {
+        width: 100vw;
+    }
+
+    .sobre-empresa {
+        height: 190px;
+    }
+
+    .container-sobre {
+        height: 10%;
+    }
+
+    .parallax {
+        height: 59vh;
+    }
+
 }
 
-.container-grid #logo {
-    width: 60%;
+@media screen and (max-width: 920px) {
+    .parallax {
+        height: 55vh;
+    }
 }
 
-.container-grid #hamburgue {
-    margin-left: 20%;
-    padding-top: 5%;
-    width: 80px;
+@media screen and (max-width: 856px) {
+    .parallax {
+        height: 53vh;
+    }
+    
+}
 
-    display: unset;
 
-    background: none;
+@media screen and (max-width: 840px) {
+    .redes-sociais {
+        height: 35%;
+    }
 
-    border: none;
-    fill: #458104;
+    .parallax {
+        height: 50vh;
+    }
+}
 
+
+
+@media screen and (max-width: 750px) {
+
+    .container-sobre #newnew {
+        height: 200px;
+
+        margin-top: 20%;
+    }
+
+    .um-parte-sobre #img-empresa {
+        width: 450px;
+    }
+
+    .dois-parte-sobre #empresa-por-dentro {
+        width: 400px;
+    }
+
+    .parallax {
+        height: 46vh;
+    }
+
+}
+
+@media screen and (max-width: 750px) {
+
+    .menu {
+        right: 99px;
+    }
+
+}
+
+
+@media screen and (max-width: 655px) {
+
+    .parallax {
+        height: 40vh;
+    }
+
+    .um-parte-sobre #img-empresa {
+        width: 350px;
+        height: 200px
+    }
+}
+
+
+@media screen and (max-width: 655px) {
+
+    .dois-parte-sobre #empresa-por-dentro {
+        width: 350px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .menu {
+        width: 350px;
+    }
+}
+
+
+
+@media screen and (max-width: 550px) {
+    .um-parte-sobre p {
+        width: 100%;
+    }
+
+    .fantasma p {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+.um-parte-sobre {
+  
+    margin-left: 10%;
+}
+
+.dois-parte-sobre {
+    margin-left: -30%;
+}
+
+.container-sobre #newnew {
+    margin-top: 30%;
 }
 }
