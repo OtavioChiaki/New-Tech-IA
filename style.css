@@ -530,10 +530,18 @@ footer .container-contatos {
 }
 
 
+.menu-fechado {
+    display: none;
+}
+
+#icone-barras {
+    display: none;
+}
+
 
 @media screen and (max-width: 2500px) {
 
-    .container-grid #hamburgue {
+    header button {
         display: none
     }
 
@@ -631,7 +639,7 @@ footer .container-contatos {
         width: 60%;
     }
 
-    .container-grid #hamburgue {
+    header button {
         margin-left: 20%;
         padding-top: 5%;
         width: 80px;
@@ -681,6 +689,7 @@ footer .container-contatos {
         height: 59vh;
     }
 
+   
 }
 
 @media screen and (max-width: 988px) {
@@ -694,6 +703,8 @@ footer .container-contatos {
 
     margin-left: 3%;
 }
+
+
 }
 
 
@@ -911,6 +922,7 @@ width: calc(30% - 1px);
     width: 100%;
     border-radius: 0;
 }
+
 }
 
 @media screen and (max-width: 500px) {
